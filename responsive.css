@@ -1,0 +1,81 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  body {
+    max-width: 100%;
+  }
+
+  .row-to-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Options display: NONE / BLOCK */
+  .pc-only, #wrapper nav ul, #pc-img {
+    display: none;
+  }
+
+  #mobilemenu, #mobile-nav a, #mob-img {
+    display: block;
+  }
+
+  /* ACTIVE boutons et inputs */
+  a:active, main article input:active, #sbmt-btn:active {
+    cursor: pointer;
+    color: #c9b33b;
+  }
+
+  main input:active {
+    background-color: #495471;
+  }
+
+  /* logo et rangée d'icones */
+  #logo {
+    max-width: 100%;
+    height: auto;
+    padding: 1px 10px;
+  }
+
+  #icons-row {
+    padding-top: 10px;
+  }
+
+  /* nav version mobile */
+  #both-menu {
+    display: flex;
+    justify-content: flex-end;
+    margin: 2px 5px 0px 0px;
+  }
+
+  #both-menu img {
+    height: 20px;
+    margin: 0;
+  }
+
+  #both-menu a {
+    padding: 5px;
+  }
+
+  /* Font-sizes communes */
+  #title, #advantages, #promo, .foot-col {
+    font-size: 0.8em;
+  }
+
+  /* FOOTER */
+  h5 {
+    font-size: 1em;
+  }
+
+  .foot-col {
+    width: 100%;
+    justify-content: center;
+  }
+
+  /* ancre */
+  #haut {
+    position: relative;
+    top: -5.4em;
+  }
+
+  #haut img {
+    height: 35px;
+  }
+}

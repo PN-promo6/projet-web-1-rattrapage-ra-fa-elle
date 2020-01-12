@@ -1,0 +1,315 @@
+/*---GENERAL-----------------------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "questrial", sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 1em;
+}
+
+/*---width : 100% -------------------------------*/
+body, #promo, #wrapper, #wrapper nav, #icons-row, #new-collection, #new-collection img, main, input, #advantages, form, textarea {
+  width: 100%;
+  height: auto;
+}
+
+/*---généralités sur les display ----------------*/
+
+#wrapper, #wrapper nav ul, #icons-row, #products-row, .colors-ctn, .description, .btn-ctn, #advantages, footer {
+  display: flex;
+}
+
+/*---généralités liens et boutons, decor et hover*/
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+a:hover, main article input:hover, #sbmt-btn:hover {
+  cursor: pointer;
+  color: #c9b33b;
+}
+
+main input:hover {
+  background-color: #495471;
+}
+
+form, input{
+  border: none;
+}
+
+/*---LISTES / display NONE and BLOCK------------*/
+ul {
+  list-style-type: none;
+}
+
+#mob-img, #mobilemenu, #mobile-cat {
+  display: none;
+}
+
+#promo, .fav-icon {
+  display: block;
+}
+
+/* text-align et justify-content ---------------*/
+ #promo, #title, #advantages {
+   text-align: center;
+ }
+
+ #products-row, .description, footer {
+   justify-content: space-between;
+ }
+
+.btn-ctn, #advantages {
+  justify-content: center;
+}
+
+/*--- fontes et couleurs--------------------------*/
+#wrapper nav ul, h1 {
+  font-family: 'cinzel';
+}
+
+ h3 small, h5 {
+     color: #C9B33B;
+ }
+/*--- STYLES UNIQUES OU RARES ---------------------------------------*/
+/*---Bandeau Promo-----------------------------*/
+#promo {
+  background-color: #0C1529;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px 0px;
+  letter-spacing: 0.20em;
+}
+
+#promo strong {
+  color: #f4e27f;
+  font-size: 1.8em;
+}
+
+/*---WRAPPER------------------------------------------------------*/
+#wrapper {
+  flex-flow: wrap;
+}
+
+/*---Rangée d'icones et logo-----------------*/
+#icons-row {
+  justify-content: space-around;
+  padding-top: 25px;
+}
+
+#logo {
+  height: 80px;
+}
+
+#left-icons img, #both-menu img, #haut img {
+  height: 45px;
+  width: auto;
+  margin: 20px 15px 20px 15px;
+}
+
+/*---catégories----------------------------*/
+#wrapper nav ul {
+  justify-content: space-around;
+  font-size: 1.1em;
+  padding-top: 25px;
+  letter-spacing: 0.055em;
+  font-weight: bold;
+  padding-left: 0px;
+}
+
+.filters, #title {
+  color: #2F3950;
+}
+
+/*---HEADER image Nouvelle Collection------*/
+#new-collection {
+  margin-top: 10px;
+}
+
+/*--- H1 -------------*/
+h1 strong {
+  color: #E2D070;
+  font-size: 1.3em;
+}
+
+h2 {
+  font-size: 1.1em;
+  letter-spacing: 0.06em;
+  border-bottom: 0.5px solid #baa47c;
+  padding-bottom: 25px;
+  line-height: 30px;
+}
+
+/*--- PRODUCTS ROW --------------------*/
+#products-row {
+  padding-bottom: 30px;
+  margin: 5px 5px 30px 5px;
+}
+
+#products-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+.singleprod {
+  margin: 0px 15px;
+}
+
+/*---icone favoris---*/
+.fav-icon {
+  width: 55px;
+  position: relative;
+  top: 65px;
+  left: 15px;
+}
+
+/*---textes--------*/
+.description {
+  padding-right: 10px;
+}
+
+h3 {
+  color: #4d4d4d;
+  font-weight: 400;
+}
+
+h3 small {
+  font-size: 0.8em;
+}
+
+/*---prix----*/
+.description p {
+  font-size: 1.5em;
+  padding: 2px;
+}
+
+/*---Coloris A FAIRE------------------*/
+.colors-ctn {
+  padding-bottom: 15px;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+#yellow {
+  background-color: #FEB634;
+}
+
+.black {
+  background-color: #000;
+}
+
+.khaki {
+  background-color: #72803D;
+}
+
+.purple {
+  background-color: #590E1F;
+}
+
+#red {
+  background-color: #DC1A19;
+}
+
+#aqua {
+  background-color: #84dcc6;
+}
+
+#night {
+  background-color: #002358;
+}
+
+#white {
+  border: solid 0.5px rgba(0, 0, 0, 0.5);
+}
+
+/*--- Bouton AJOUT AU PANIER ---------------*/
+.btn-ctn {
+  padding-top: 15px;
+}
+
+main article input {
+  background-color: #3c455d;
+  color: #FFF;
+  letter-spacing: 0.060em;
+  padding: 15px 5px;
+}
+
+/*---Avantages entreprise-----------------------------------*/
+#advantages {
+  border-top: solid #baa47c 0.5px;
+  border-bottom: solid #baa47c 0.5px;
+  padding: 10px;
+}
+
+.single-adv {
+  width: 30%;
+  margin: 15px 20px;
+}
+
+.single-adv img {
+  height: 40px;
+}
+
+/*---Adv Texte---------*/
+h4 {
+  color: #3c455d;
+}
+
+h4 small {
+  font-weight: 400;
+}
+
+/*--- FOOTER -----------------------------------------------------------------*/
+footer {
+  background-color: #303747;
+}
+
+.foot-col {
+  width: 30%;
+  line-height: 1.3em;
+  padding: 0px 30px 0px 50px;
+}
+
+h5, .foot-col {
+  font-size: 0.9em;
+}
+
+.foot-col ul {
+  left: -40px;
+  position: relative;
+}
+
+/*---Ancre------*/
+#haut {
+  position: relative;
+  top: 30px;
+  left: 210px;
+}
+
+/*---formulaire de contact -------*/
+form {
+  margin-bottom: 10px;
+}
+
+form input, textarea {
+  max-height: 100px;
+  resize: none;
+  padding: 5px;
+  margin: 3px 0px;
+}
+
+  /*---Submit---*/
+  #sbmt-btn {
+    background: white;
+    letter-spacing: 0.06em;
+  }
